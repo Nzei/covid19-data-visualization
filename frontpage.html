@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Visualization of Items from CSV</title>
+    <script
+            type="text/javascript"
+            src="utilities/jquery-3.5.0.min.js"
+    ></script>
+    <script
+            type="text/javascript"
+            src="utilities/bootstrap-4.4.1-dist/js/bootstrap.min.js"
+    ></script>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="utilities/bootstrap-4.4.1-dist/css/bootstrap.min.css"
+    />
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/jquery-jvectormap-2.0.5.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+
+
+<div class="top">
+    <p style="text-align: center">Uche Jude Nzei's Data Visualization of the Coronavirus in France</p>
+    <div id="world-map" style="width: 100%; height: 690px"></div>
+</div>
+
+<div style="width: 100%; height: 1px; background: purple"></div>
+
+<div id="container">
+    <div class="top">
+                <span style="text-align: center">Graph of French Coronavirus Cases</span>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Cumulative Chart</label>
+            <div id="cumulative-french-chart" style="height: 400px">
+                <p><span id="frenchColor">France</span> , <span style="color: #9400D3">Italy</span>, <span
+                        style="color: #18d321">Spain</span> , <span style="color: #a0a118">Germany</span>, <span
+                        style="color: #d31e2d">Switzerland</span></p>
+                <svg style="width: 100%; height: 100%"></svg>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <label>Over time Chart</label>
+            <div id="time-series-french-chart" style="height: 400px">
+                <p><span style="color: #9400D3">World</span>, <span style="color:#d31e2d">Europe</span></p>
+                <svg style="width: 100%; height: 100%"></svg>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<div style="width: 100%; height: 1px; background: purple"></div>
+
+
+<div class="top">
+    <span style="text-align: center">Graph of French Coronavirus Cases</span>
+
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <label>Mortality Rate Chart</label>
+        <div id="mortality-french-chart" style="height: 400px">
+            <p><span id="colorFrance">France</span> , <span style="color: #9400D3">Italy</span>, <span
+                    style="color: #18d321">Spain</span> , <span style="color: #a0a118">Germany</span>, <span
+                    style="color: #d31e2d">Switzerland</span></p>
+            <svg style="width: 100%; height: 100%"></svg>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <label>Death Rate Chart</label>
+        <div id="death-rate-world-europe-chart" style="height: 400px">
+            <p><span style="color: #9400D3">World</span>, <span style="color:#d31e2d">Europe</span></p>
+            <svg style="width: 100%; height: 100%"></svg>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="js/frontend.js"></script>
+<script type="text/javascript" src="js/jquery-jvectormap-2.0.5.min.js"></script>
+<script type="text/javascript" src="js/jquery-jvectormap-world-mill.js"></script>
+</body>
+</html>

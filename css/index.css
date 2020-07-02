@@ -1,0 +1,32 @@
+
+.first_div {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.marginless_row {
+    width: 50%;
+    text-align: -webkit-center;
+}
+
+.top {
+   padding:35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.row {
+    margin: 0px;
+    
+}
+
+body {
+    background-color: rgba(0, 255, 255, 0.17);
+}
+
+
+
+#frenchColor{
+    color: #08100D;
+}
